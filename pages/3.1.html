@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecomunicaciones | Modulación</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Telecomunicaciones Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto sm:mt-4" id="navbar-default">
+            <ul id="nav-links" class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="../index.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="3.1.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">3.1 Técnicas de Modulación Analógica
+                </a>
+              </li>
+              <li>
+                <a href="3.2.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.2 Técnicas de Modulación Digital
+                </a>
+              </li>
+              <li>
+                <a href="3.3.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.3 Conversión Analógico - Digital
+                </a>
+              </li>
+              <li>
+                <a href="3.4.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.4 Códigos de Línea
+                </a>
+              </li>
+              <li>
+                <a href="3.5.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.5 Módem, Estándares y Protocolos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main>
+      <section class="bg-white shadow-sm dark:bg-gray-900 p-6 min-h-[70vh] flex flex-col items-center">
+        <h1 class="text-4xl sm:text-6xl text-center font-bold dark:text-white my-6">Técnicas de Modulación Analógica</h1>
+        <div class="max-w-4xl">
+          <div class="p-4">
+          <p class="text-lg dark:text-gray-300 text-justify">
+            La modulación analógica se emplea cuando una señal analógica modula a otra (llamada portadora). Este proceso permite transmitir información a través de medios como el aire o cables.
+        </p>
+        </div>
+        <div class="p-4">
+          <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">1. Modulación en Amplitud (AM):</h2>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <img src="../images/modulacion-amplitud-am.png" alt="Modulación en Amplitud AM" class="md:w-1/2 rounded-lg">
+            <ol class="max-w-md space-y-1 dark:text-gray-300 list-disc list-inside md:w-1/2">
+              <li>La amplitud de la señal portadora varía proporcionalmente con la señal de información.</li>
+              <li>Frecuencia y fase permanecen constantes.</li>
+              <li>Usada en emisoras de radio AM.</li>
+            </ol>
+          </div>          
+          <p class="text-lg dark:text-gray-300 text-justify mt-2">
+            Ejemplo: Una señal de voz modula la amplitud de una onda senoidal de 1 MHz.<br>
+            Resultado: La señal resultante muestra picos de amplitud que reflejan la voz transmitida.<br>
+            La modulación AM, aunque sencilla, presenta limitaciones prácticas. Su principal desventaja es la alta sensibilidad al ruido, ya que interferencias o distorsiones en la amplitud (como descargas atmosféricas) corrompen directamente la información. Además, su eficiencia espectral es baja: en emisoras de radio AM, el ancho de banda útil por canal no supera los 4.5 kHz, lo que limita la calidad del audio. Sin embargo, su simplicidad la hizo estándar en las primeras comunicaciones inalámbricas.            
+        </p>
+        </div>
+        </div>
+        <div class="max-w-4xl">
+        <div class="p-4">
+          <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">2. Modulación en Frecuencia (FM):
+          </h2>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <img src="../images/modulacion-frecuencia-fm.png" alt="Modulación en Amplitud AM" class="md:w-1/2 rounded-lg">
+            <ol class="max-w-md space-y-1 dark:text-gray-300 list-disc list-inside md:w-1/2">
+              <li>La frecuencia de la portadora cambia de acuerdo a la señal moduladora.</li>
+              <li>Amplitud y fase constantes.</li>
+              <li>Utilizada en radio FM y telecomunicaciones móviles.</li>
+            </ol>
+          </div>          
+          <p class="text-lg dark:text-gray-300 text-justify mt-2">
+            Ejemplo: Voz humana modula una portadora de 100 MHz, variando ligeramente su frecuencia.<br>
+            Ventaja: Mayor inmunidad al ruido en comparación con AM.<br>
+            La modulación FM no solo se usa en radiofonía. En aplicaciones avanzadas como radares y telemetría espacial, su resistencia al ruido permite transmitir datos críticos incluso en entornos hostiles. Por ejemplo, la NASA emplea FM en bandas como S (2-4 GHz) para comunicarse con satélites, donde pequeñas variaciones de frecuencia pueden codificar información sin degradarse por interferencias.
+                    
+          </p>
+        </div>
+        </div>
+        <div class="max-w-4xl">
+          < class="p-4">
+            <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">3. Modulación en Fase (PM):
+            </h2>
+            <div class="flex flex-col gap-4 md:flex-row">
+              <img src="../images/modulacion-fase-pm.png" alt="Modulación en Fase PM" class="md:w-1/2 rounded-lg">
+              <div class="flex flex-col">
+                <p class="text-lg dark:text-gray-300 text-justify">
+                  La <span class="font-bold">Modulación de Fase (PM)</span>, aunque menos común, es fundamental en sistemas digitales. Aquí la fase instantánea de la portadora cambia según la señal moduladora. Tanto FM como PM son modulaciones angulares, pero PM es más sensible a variaciones rápidas de la señal, lo que la hace ideal para transmisión de datos digitales de alta velocidad.
+                </p>
+                <ol class="space-y-1 dark:text-gray-300 list-disc list-inside">
+                  <li>La fase de la señal portadora cambia en función de la señal analógica.</li>
+                  <li>Frecuencia y amplitud constantes.</li>
+                  <li>Similar a FM, pero con variaciones en fase en vez de frecuencia.</li>
+                </ol>
+              </div>              
+            </div>                
+            <p class="text-lg dark:text-gray-300 text-justify mt-2">
+              Ejemplo: En telecomunicaciones digitales, la PM se usa como base para PSK.                    
+            </p>
+            <ol class="max-w-md space-y-1 dark:text-gray-300 list-disc list-inside md:w-1/2">                
+              <li>
+                <span class="font-bold">PM vs. FM:
+                </span>
+                <ol class="ps-5 space-y-1 dark:text-gray-300 list-disc list-inside">
+                  <li>PM es más eficiente en ancho de banda para señales de alta frecuencia.
+                  </li>
+                  <li>Lugar: Al final de la sección de PM.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+            <div class="flex flex-col md:flex-row mt-2">
+              <div class="md:w-1/2 dark:text-gray-300">
+                Codec:
+                <ol class="ps-5 space-y-1 dark:text-gray-300 list-disc list-inside">
+                  <li>Dispositivo o software que codifica y decodifica señales.
+                  </li>
+                  <li>En TV digital convierte señales de audio/video analógicas en señales digitales comprimidas.
+                  </li>
+                  <li>
+                    Ejemplo: MPEG-2 para video, AAC para audio en transmisiones DVB.
+                  </li>
+                </ol>
+              </div>
+              <img src="../images/video-codecs.png" alt="Video Codecs" class="md:w-1/2">
+            </div>
+          </div>
+          </div>
+      </section>      
+    </main>
+    <footer class="bg-white shadow-sm dark:bg-gray-900 p-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="../index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+                </a>
+            </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="../index.html" class="hover:underline">Equipo 2</a>. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>

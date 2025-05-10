@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecomunicaciones | Modulación</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Telecomunicaciones Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto sm:mt-4" id="navbar-default">
+            <ul id="nav-links" class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="../index.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="3.1.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.1 Técnicas de Modulación Analógica
+                </a>
+              </li>
+              <li>
+                <a href="3.2.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.2 Técnicas de Modulación Digital
+                </a>
+              </li>
+              <li>
+                <a href="3.3.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">3.3 Conversión Analógico - Digital
+                </a>
+              </li>
+              <li>
+                <a href="3.4.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.4 Códigos de Línea
+                </a>
+              </li>
+              <li>
+                <a href="3.5.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.5 Módem, Estándares y Protocolos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <section class="bg-white shadow-sm dark:bg-gray-900 p-6 min-h-[70vh] flex flex-col items-center">
+        <h1 class="text-4xl sm:text-6xl text-center font-bold dark:text-white my-6">Conversión Analógico - Digital</h1>
+        <div class="max-w-4xl">
+        <div class="p-4">      
+            <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                Estas técnicas convierten una señal analógica en una señal digital que puede ser procesada o transmitida por sistemas digitales.
+            </p>
+        </div>
+        </div>
+        <div class="max-w-4xl">
+            <div class="p-4">
+                <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">PAM (Pulse Amplitude Modulation)</h2>       
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    En la Modulacion por Amplitud de Pulso (PAM), la señal analógica se representa mediante una secuencia de pulsos. La amplitud de cada pulso es proporcional al valor de la señal analógica en un instante de tiempo        
+                </p>
+            </div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Tiempo (ms)
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Amplitud
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                0
+                            </th>
+                            <td class="px-6 py-4">
+                                2.5V
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                3.0V
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                2
+                            </th>
+                            <td class="px-6 py-4">
+                                1.8V
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>     
+        <div class="max-w-4xl">
+            <div class="p-4">
+                <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">PCM (Pulse Code Modulation)
+                </h2>       
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    La Modulación por Código de Pulsos (PCM) es una técnica donde una señal analógica es muestreada y luego cada muestra es cuantificada en un valor digital.     
+                </p>
+                <ol class="space-y-1 dark:text-gray-300 list-disc list-inside">
+                    <li>
+                        <span class="font-bold">Muestreo:</span> Se capturan muestras de la señal analógica a intervalos regulares.
+                    </li>
+                    <li>
+                        <span class="font-bold">Cuantización:</span> Se asigna un valor numérico (nivel) a cada muestra.
+                    </li>
+                    <li>
+                        <span class="font-bold">Codificación:</span> Se convierte cada nivel en una secuencia binaria.
+                    </li>
+                </ol>
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    <span class="font-bold">
+                        Ejemplo:<br>
+                    </span>
+                    Una señal de voz de 4 kHz se muestrea a 8 kHz (Teorema de Nyquist), cuantiza con 8 bits (256 niveles), y cada muestra se codifica en PCM para su transmisión.  
+                </p>
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    En comunicaciones digitales, la 
+                    <span class="font-bold">Modulación por Codificación de Pulsos (PCM)
+                    </span>
+                     convierte señales analógicas en digitales mediante muestreo, cuantización y codificación. El teorema de Nyquist establece que la frecuencia de muestreo debe ser al menos el doble del ancho de banda de la señal. Por ejemplo, en telefonía se muestrea a 8 kHz (para señales de voz de 0.3-3.4 kHz) con cuantización de 8 bits, generando flujos de 64 kbps. 
+                </p>
+            </div>          
+        </div>                
+        </section>   
+        <section class="bg-white shadow-sm dark:bg-gray-900 p-6 min-h-[70vh] flex flex-col items-center">
+            <h1 class="text-4xl sm:text-6xl text-center font-bold dark:text-white my-6">Conversión Digital - Analógica</h1>
+            <div class="max-w-4xl">
+            <div class="p-4">      
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    La conversión digital a analógica es el proceso por el cual una señal <span class="font-bold">discreta</span> (digital), compuesta por datos binarios (1s y 0s), se convierte en una señal <span class="font-bold">continua</span> (analógica). Esta señal analógica es capaz de propagarse a través de medios físicos como cables coaxiales, fibra óptica (con conversores), o el aire (a través de ondas electromagnéticas).
+
+                </p>
+            </div>
+            </div>
+            <div class="max-w-4xl">
+                <div class="p-4">  
+                    <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">¿Por qué es necesaria?</h2>    
+                    <ol class="list-decimal space-y-1 dark:text-gray-300 list-inside">
+                        <li>
+                            <span class="font-bold">Compatibilidad con medios analógicos:</span> Muchas infraestructuras de comunicación todavía operan con señales analógicas (como las frecuencias de radio y televisión).
+                        </li>
+                        <li>
+                            <span class="font-bold">Reproducción de medios:</span> Para que podamos escuchar música (auriculares, altavoces) o ver imágenes en una pantalla (señales de video), las señales digitales deben convertirse a formas analógicas comprensibles por los humanos o dispositivos físicos.
+                        </li>
+                        <li>
+                            <span class="font-bold">Transmisión eficiente:</span> La señal digital modulada puede ser más eficiente, más compacta e inmune a errores en la transmisión, pero su entrega necesita señales analógicas.
+                        </li>
+                      </ol>
+                </div>
+            </div>
+            <div class="max-w-4xl">
+                <div class="p-4">  
+                    <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">Proceso general de conversión
+                    </h2>    
+                    <ol class="list-decimal space-y-1 dark:text-gray-300 list-inside">
+                        <li>
+                            <span class="font-bold">Datos binarios de entrada</span> 
+                            <p class="ms-10 text-lg dark:text-gray-300 text-justify mt-2">
+                                Secuencias de 1s y 0s generadas por computadoras, sensores digitales, transmisores, etc.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Codificación</span> 
+                            <p class="ms-10 text-lg dark:text-gray-300 text-justify mt-2">
+                                Los datos digitales pueden agruparse en bloques (por ejemplo, 4 bits a la vez) para optimizar la modulación.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Modulación</span> 
+                            <p class="ms-10 text-lg dark:text-gray-300 text-justify mt-2">
+                                Se aplica una técnica de modulación que varía una portadora analógica para codificar la información digital.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Conversor DAC</span> 
+                            <p class="ms-10 text-lg dark:text-gray-300 text-justify mt-2">
+                                El dispositivo físico convierte la señal digital modulada en una señal de voltaje o corriente variable.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Filtro pasa bajos</span> 
+                            <p class="ms-10 text-lg dark:text-gray-300 text-justify mt-2">
+                                Suaviza la señal generada eliminando las discontinuidades, haciendo que se parezca más a una señal analógica natural.
+                            </p>
+                        </li>
+                      </ol>
+                </div>
+            </div>
+            <div class="max-w-4xl">                
+                <h2 class="p-4 text-2xl text-blue-600 dark:text-blue-400 mb-2">Tipos de Modulación Digital a Analógica
+                </h2>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <img src="../images/tipos-conversion-modulacion-digital-analogica.png" alt="Tipos de Modulación Digital a Analógica" class="max-h-[50vh] md:w-1/2 rounded-lg">            
+                    <ol class="list-decimal space-y-1 dark:text-gray-300 list-inside md:w-1/2">
+                        <li>
+                            <span class="font-bold">ASK (Amplitude Shift Keying)</span> 
+                            <ul class="ps-10 mt-2 space-y-1 dark:text-gray-300 list-disc">
+                                <li>
+                                    Se modifica la amplitud según los bits.
+                                </li>
+                                <li>
+                                    Bit 1 → onda alta; Bit 0 → onda baja.
+                                </li>
+                                <li>
+                                    Simple de implementar.
+                                </li>
+                                <li>
+                                    Muy sensible al ruido.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-bold">FSK (Frequency Shift Keying)</span> 
+                            <ul class="ps-10 mt-2 space-y-1 dark:text-gray-300 list-disc">
+                                <li>
+                                    Se modifica la frecuencia de la onda portadora.
+                                </li>
+                                <li>
+                                    Bit 1 → frecuencia más alta; Bit 0 → frecuencia más baja.
+                                </li>
+                                <li>
+                                    Menos sensible al ruido que ASK
+                                </li>
+                                <li>
+                                    Usado en módems antiguos y tecnologías básicas de radio.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-bold">PSK (Phase Shift Keying)</span> 
+                            <ul class="ps-10 mt-2 space-y-1 dark:text-gray-300 list-disc">
+                                <li>
+                                    Se modifica la fase de la onda portadora
+                                </li>
+                                <li>
+                                    Por ejemplo: 0° representa un bit, 180° representa otro.
+                                </li>
+                                <li>
+                                    Requiere sincronización entre transmisor y receptor
+                                </li>
+                                <li>
+                                    Más eficiente en el uso del ancho de banda.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="font-bold">QAM (Quadrature Amplitude Modulation)</span> 
+                            <ul class="ps-10 mt-2 space-y-1 dark:text-gray-300 list-disc">
+                                <li>
+                                    Mezcla de ASK y PSK: cambia simultáneamente amplitud y fase.
+                                </li>
+                                <li>
+                                    Muy eficiente: puede transmitir múltiples bits por símbolo (QAM-16, QAM-64, QAM-256).
+                                </li>
+                                <li>
+                                    Es el método más común en tecnologías modernas (Wi-Fi, LTE, cable módems, TV digital).
+                                </li>
+                                <li>
+                                    Requiere buena calidad de señal, ya que es sensible al ruido.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>   
+        <section class="bg-white shadow-sm dark:bg-gray-900 p-6 min-h-[70vh]">
+            <h1 class="text-4xl sm:text-6xl text-center font-bold dark:text-white my-6">
+                Dispositivo DAC (Digital to Analog Converter)
+            </h1>
+            <div class="max-w-4xl mx-auto">
+            <div class="p-4">      
+                <p class="text-lg dark:text-gray-300 text-justify mt-2">
+                    Un DAC es el circuito o componente encargado de convertir datos digitales en señales analógicas. Tiene aplicaciones en audio, video, telecomunicaciones, y electrónica general.
+                </p>
+            </div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="p-4">
+                    <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">
+                        Componentes de un DAC típico:
+                    </h2>       
+                    <ol class="space-y-1 dark:text-gray-300 list-disc list-inside">
+                        <li>
+                            <span class="font-bold">Registro de entrada digital:</span> Recibe la palabra binaria.
+                        </li>
+                        <li>
+                            <span class="font-bold">Red de resistencias (ponderadas o en red R-2R):</span> Convierte el valor binario en un voltaje proporcional.
+                        </li>
+                        <li>
+                            <span class="font-bold">Amplificador operacional:</span> Ajusta la salida analógica.
+                        </li>
+                        <li>
+                            <span class="font-bold">Filtro pasa bajos:</span> Suaviza la señal para que no tenga escalones o picos.
+                        </li>
+                    </ol>
+                </div>
+                <h2 class="p-4 text-2xl text-blue-600 dark:text-blue-400 mb-2">
+                    Tipos de DACs:
+                </h2>  
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Tipo de DAC
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Descripción
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Aplicaciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Ponderado
+                                </th>
+                                <td class="px-6 py-4">
+                                    Usa resistencias escaladas según la posición del bit
+                                </td>
+                                <td class="px-6 py-4">
+                                    Simple pero poco escalable
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Red R-2R
+                                </th>
+                                <td class="px-6 py-4">
+                                    Usa una red de resistencias binarias (R y 2R)
+                                </td>
+                                <td class="px-6 py-4">
+                                    Muy común, buena precisión
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Sigma Delta
+                                </th>
+                                <td class="px-6 py-4">
+                                    Conversión de alta precisión y resolución
+                                </td>
+                                <td class="px-6 py-4">
+                                    Audio de alta fidelidad, instrumentación
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Convertidor por Corriente
+                                </th>
+                                <td class="px-6 py-4">
+                                    Emite una señal de corriente en vez de voltaje
+                                </td>
+                                <td class="px-6 py-4">
+                                    Sensores industriales
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+                <h2 class="p-4 text-2xl text-blue-600 dark:text-blue-400 mb-2">
+                    Aplicaciones prácticas de la conversión digital a analógica:
+                </h2>  
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Área
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Ejemplo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Audio Digital
+                                </th>
+                                <td class="px-6 py-4">
+                                    Conversión de archivos MP3 a señales analógicas para altavoces.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Televisión Digital
+                                </th>
+                                <td class="px-6 py-4">
+                                    Señales digitales convertidas en analógicas para visualización o transmisión sobre redes coaxiales.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Redes Moviles (4G/5G)
+                                </th>
+                                <td class="px-6 py-4">
+                                    Datos digitales modulados con QAM para su transmisión por aire.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Wi-Fi
+                                </th>
+                                <td class="px-6 py-4">
+                                    Datos de red modulados en señales portadoras de radiofrecuencia.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Bluetooth
+                                </th>
+                                <td class="px-6 py-4">
+                                    Señales digitales de audio convertidas para audífonos.
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Electrodomésticos inteligentes
+                                </th>
+                                <td class="px-6 py-4">
+                                    Microcontroladores convierten valores binarios en señales físicas para controlar motores, luces, etc.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>   
+                <h2 class="p-4 text-2xl text-blue-600 dark:text-blue-400 mb-2">
+                    Comparación de técnicas de modulación
+                </h2>  
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Técnica
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Parámetro Modificado
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Bits por Símbolo (ejemplo)
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Complejidad
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Uso Típico
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ASK
+                                </th>
+                                <td class="px-6 py-4">
+                                    Amplitud
+                                </td>
+                                <td class="px-6 py-4">
+                                    1 Bit
+                                </td>
+                                <td class="px-6 py-4">
+                                    Baja
+                                </td>
+                                <td class="px-6 py-4">
+                                    RFID, transmisiones simples
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    FSK
+                                </th>
+                                <td class="px-6 py-4">
+                                    Frecuencia
+                                </td>
+                                <td class="px-6 py-4">
+                                    1 Bit
+                                </td>
+                                <td class="px-6 py-4">
+                                    Media
+                                </td>
+                                <td class="px-6 py-4">
+                                    Módems, comunicación inalámbrica básica
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    PSK
+                                </th>
+                                <td class="px-6 py-4">
+                                    Fase
+                                </td>
+                                <td class="px-6 py-4">
+                                    1-2 Bits (BPSK/QPSK)
+                                </td>
+                                <td class="px-6 py-4">
+                                    Media-Alta
+                                </td>
+                                <td class="px-6 py-4">
+                                    Satélites, Wi-Fi
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    QAM
+                                </th>
+                                <td class="px-6 py-4">
+                                    Amplitud y Fase
+                                </td>
+                                <td class="px-6 py-4">
+                                    4-8 bits (QAM-16, 64, etc.)                                    
+                                </td>
+                                <td class="px-6 py-4">
+                                    Alta
+                                </td>
+                                <td class="px-6 py-4">
+                                    TV digital, 4G/5G, cable módems
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>   
+                <div class="p-4">  
+                    <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">Ventajas y desventajas
+                    </h2>    
+                    <ol class="space-y-1 dark:text-gray-300 list-none list-inside">
+                        <li>
+                            <span class="font-bold">Ventajas</span> 
+                            <ol class="ps-10 space-y-1 dark:text-gray-300 list-disc list-inside">
+                                <li>
+                                    Permite la transmisión de datos digitales sobre medios analógicos.
+                                </li>
+                                <li>
+                                    Compatible con sistemas analógicos existentes.
+                                </li>
+                                <li>
+                                    Aumenta la eficiencia espectral (más datos en menos espacio).
+                                </li>
+                                <li>
+                                    Posibilidad de mayor velocidad de transmisión.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <span class="font-bold">Desventajas</span> 
+                            <ol class="ps-10 space-y-1 dark:text-gray-300 list-disc list-inside">
+                                <li>
+                                    Puede ser sensible al ruido (especialmente QAM).
+                                </li>
+                                <li>
+                                    Requiere modulación y sincronización precisa.
+                                </li>
+                                <li>
+                                    A mayor eficiencia, mayor complejidad del hardware y software.
+                                </li>
+                            </ol>
+                        </li>
+                      </ol>
+                </div>       
+            </div>               
+            </section>  
+    </main>
+    <footer class="bg-white shadow-sm dark:bg-gray-900 p-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="../index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+                </a>
+            </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="../index.html" class="hover:underline">Equipo 2</a>. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
