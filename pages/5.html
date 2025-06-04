@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecomunicaciones | Modelos de Comunicación en Redes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Telecomunicaciones Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto sm:mt-4" id="navbar-default">
+        <ul id="nav-links"
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="../index.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="3.1.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.1
+              Técnicas de Modulación Analógica
+            </a>
+          </li>
+          <li>
+            <a href="3.2.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.2
+              Técnicas de Modulación Digital
+            </a>
+          </li>
+          <li>
+            <a href="3.3.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.3
+              Conversión Analógico - Digital
+            </a>
+          </li>
+          <li>
+            <a href="3.4.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.4
+              Códigos de Línea
+            </a>
+          </li>
+          <li>
+            <a href="3.5.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">3.5
+              Módem, Estándares y Protocolos
+            </a>
+          </li>
+          <li>
+            <a href="5.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">
+              Unidad 5
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="bg-white shadow-sm dark:bg-gray-900 p-6 min-h-[70vh] flex flex-col items-center">
+      <h1 class="text-4xl sm:text-6xl text-center font-bold dark:text-white my-6">Modelos de Comunicación en Redes</h1>
+      <div class="max-w-4xl">
+        <div class="p-4">
+          <p class="text-lg dark:text-gray-300 text-justify">
+            Los modelos de comunicación en redes son esquemas que explican cómo se transmite la información entre
+            dispositivos dentro de una red. Su objetivo principal es estandarizar y facilitar la comunicación entre
+            diferentes sistemas, marcas y tecnologías.<br>
+            Estos modelos dividen el proceso de comunicación en capas, donde cada capa tiene una función específica.
+            Esto ayuda a:
+          </p>
+          <ol class="max-w-md space-y-1 dark:text-gray-300 list-disc list-inside md:w-1/2">
+            <li>Entender cómo fluye la información.</li>
+            <li>Detectar errores y problemas en la red.</li>
+            <li>Diseñar redes más eficientes y escalables.</li>
+            <li>Lograr compatibilidad entre sistemas diferentes.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="max-w-4xl">
+        <div class="p-4">
+          <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">Modelo OSI: Las 7 Capas
+          </h2>
+          <div class="flex flex-col gap-4 md:flex-row mb-4">
+            <p class="text-lg dark:text-gray-300 text-justify mt-2">
+              El modelo OSI (Open Systems Interconnection) fue desarrollado por la ISO para estandarizar la comunicación
+              entre computadoras. Divide el proceso en 7 capas, desde el software hasta el hardware.
+            </p>
+            <img src="../images/modelo-osi.webp" alt="Modelo OSI" class="md:w-1/2 rounded-lg">
+          </div>
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Nº
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Capa
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Función principal
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">7</th>
+                  <td class="px-6 py-4">Aplicación</td>
+                  <td class="px-6 py-4">Interacción con el usuario final (navegadores, correo, etc.).</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">6</th>
+                  <td class="px-6 py-4">Presentación</td>
+                  <td class="px-6 py-4">Traducción, compresión y cifrado de los datos.</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">5</th>
+                  <td class="px-6 py-4">Sesión</td>
+                  <td class="px-6 py-4">Establecimiento y control de sesiones entre aplicaciones.</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">4</th>
+                  <td class="px-6 py-4">Transporte</td>
+                  <td class="px-6 py-4">Entrega confiable de los datos (TCP, UDP).</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">3</th>
+                  <td class="px-6 py-4">Red</td>
+                  <td class="px-6 py-4">Encaminamiento y direccionamiento (IP, routers).</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
+                  <td class="px-6 py-4">Enlace de datos</td>
+                  <td class="px-6 py-4">Organización en tramas, detección de errores, uso de direcciones MAC.</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                  <td class="px-6 py-4">Física</td>
+                  <td class="px-6 py-4">Transmisión de bits por el medio físico (cables, ondas, señales).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-4xl">
+        <div class="p-4">
+          <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">Modelo TCP/IP: Las 5 Capas
+          </h2>
+          <div class="flex flex-col gap-4 md:flex-row mb-4">
+            <p class="text-lg dark:text-gray-300 text-justify mt-2">
+              El modelo TCP/IP es el estándar de Internet actual. Es más simple y combina algunas funciones del modelo
+              OSI.
+            </p>
+            <img src="../images/modelo-tcp.webp" alt="Modelo TCP/IP" class="md:w-1/2 rounded-lg">
+          </div>
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-8">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Nº
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Capa
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Función principal
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">5</th>
+                  <td class="px-6 py-4">Aplicación</td>
+                  <td class="px-6 py-4">Proporciona servicios de red a las aplicaciones del usuario.</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">4</th>
+                  <td class="px-6 py-4">Transporte</td>
+                  <td class="px-6 py-4">Transporte confiable (TCP) o rápido (UDP) de datos entre dispositivos.</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">3</th>
+                  <td class="px-6 py-4">Internet</td>
+                  <td class="px-6 py-4">Direccionamiento y enrutamiento de paquetes (protocolo IP).</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">2</th>
+                  <td class="px-6 py-4">Enlace de datos</td>
+                  <td class="px-6 py-4">Define cómo se envían los datos entre dispositivos en la misma red.</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                  <td class="px-6 py-4">Física</td>
+                  <td class="px-6 py-4">Transmisión de bits físicos a través del medio de red (cable o inalámbrico).
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-4xl">
+        <div class="p-4">
+          <h2 class="text-2xl text-blue-600 dark:text-blue-400 mb-2">Capas de la Nube (Cloud Computing)
+          </h2>
+          <div class="flex flex-col gap-4 md:flex-row mb-4">
+            <p class="text-lg dark:text-gray-300 text-justify mt-2">
+              Con el crecimiento de Internet y los servicios en línea, se han desarrollado nuevos modelos de
+              comunicación basados en la nube, conocidos como modelos de servicio en la nube.
+            </p>
+            <img src="../images/modelo-nube.png" alt="Capas de la Nube (Cloud Computing)P" class="md:w-1/2 rounded-lg">
+          </div>
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-8">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Modelo
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Nombre completo
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    ¿Qué ofrece?
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">SaaS
+                  </th>
+                  <td class="px-6 py-4">Software como Servicio</td>
+                  <td class="px-6 py-4">Aplicaciones completas listas para usarse (ej. Google Drive, Gmail).</td>
+                </tr>
+                <tr
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">PaaS
+                  </th>
+                  <td class="px-6 py-4">Plataforma como Servicio</td>
+                  <td class="px-6 py-4">Entorno para desarrollar, probar y desplegar aplicaciones (ej. Heroku).</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">IaaS
+                  </th>
+                  <td class="px-6 py-4">Infraestructura como Servicio</td>
+                  <td class="px-6 py-4">Recursos como servidores, almacenamiento y redes (ej. AWS EC2).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="bg-white shadow-sm dark:bg-gray-900 p-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="../index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Telecomunicaciones</span>
+        </a>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="../index.html"
+          class="hover:underline">Equipo 2</a>. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
